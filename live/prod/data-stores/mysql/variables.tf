@@ -5,7 +5,7 @@ variable "db_username" {
 }
 
 variable "db_password" {
-  description = "The username for the mysql database"
+  description = "The password for the mysql database"
   type        = string
   sensitive   = true
 }

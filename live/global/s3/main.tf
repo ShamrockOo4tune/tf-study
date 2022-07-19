@@ -5,7 +5,7 @@ provider "aws" {
 #############   S3  bucket   ###############
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "shamrockoo4tune-tf-state-1"
+  bucket = "shamrockoo4tune-tf-state"
 
   # accidential deletion preventor
   lifecycle {
@@ -48,7 +48,7 @@ resource "aws_s3_bucket_public_access_block" "public_access" {
 #############   Dynamo  DB   ###############
 
 resource "aws_dynamodb_table" "tf_locks" {
-  name         = "tf-locks-1"
+  name         = "tf-locks"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
 

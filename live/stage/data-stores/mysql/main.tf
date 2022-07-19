@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "shamrockoo4tune-tf-state-1"
+    bucket         = "shamrockoo4tune-tf-state"
     key            = "stage/data-store/mysql/terraform.tfstate"
     region         = "eu-central-1"
-    dynamodb_table = "tf-locks-1"
+    dynamodb_table = "tf-locks"
     encrypt        = true
   }
 }
